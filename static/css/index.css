@@ -49,10 +49,19 @@
 }
 #nested-hosting .hosting-example{
     padding: 40px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+#nested-hosting .hosting-example h1{
+    color: lightblue;
 }
 #nested-hosting .hosting-example p{
     margin-top: 20px;
     margin-bottom: 40px;
+    color: white;
+}
+#nested-hosting .hosting-example img{
+    border-radius: 25px;
 }
 /*Footer*/
 #footer{
@@ -92,9 +101,9 @@
     }
 }
 /*Smaller Desktop Res*/
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1800px){
     #nested-hosting{
-        height: 1400px;
+        height: 1800px;
     }
     #nested-hosting .company-introduction{
         flex-direction: column;
