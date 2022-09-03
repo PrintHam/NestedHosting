@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+/*Slogan*/
+#company-slogan{
+    background-color: var(--secondary);
+    color: var(--primary-text-color);
+    min-height: 150px;
+}
+#company-slogan h1, #company-slogan p{
+    text-align: center;
+}
+#company-slogan h1{
+    animation: OpacityShift;
+    animation-duration: 3s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+/*Nested Hosting Introduction*/
+#nested-hosting{
+    background-color: var(--primary);
+    color: var(--secondary-text-color);
+    height: 1200px;
+}
+#nested-hosting .company-introduction{
+    display: flex;
+    justify-content: space-evenly;
+}
+#nested-hosting .company-introduction div{
+    margin: 5%;
+}
+#nested-hosting .how-it-works p{
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#nested-hosting .flex-text{
+    display: flex;
+}
+#nested-hosting .text{
+    background-color: rgba(0, 0, 0, 0.89);
+    border-radius: 10px;
+    padding: 20px;
+}
+#nested-hosting .text h1{
+    color: lightblue;
+}
+#nested-hosting .text p{
+    color: white;
+}
+#nested-hosting .hosting-example{
+    padding: 40px;
+}
+#nested-hosting .hosting-example p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/*Footer*/
+#footer{
+    color: var(--primary-text-color);
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--secondary);
+}
+#footer .company-name{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#footer .footer-list, .social-media-list{
+    list-style-type: none;
+}
+#footer .footer-list li{
+    margin-top: 10px;
+}
+#footer .footer-list a{
+    text-decoration: none;
+    color: white;
+}
+#footer .social-media-list{
+    display: flex;
+    gap: 20px;
+}
+/*Animation*/
+@keyframes OpacityShift{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.5;
+    }
+}
+/*Smaller Desktop Res*/
+@media only screen and (max-width: 1500px){
+    #nested-hosting{
+        height: 1400px;
+    }
+    #nested-hosting .company-introduction{
+        flex-direction: column;
+        align-items: center;
+    }
+}
