@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+/*Plans*/
+#plans{
+    background-color: var(--primary);
+    min-width: 900px;
+    height: 800px;
+    color: black;
+    padding-top: 50px;
+}
+#plans .header-container h1{
+    text-align: center;
+}
+#plans .plan-flex-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#plans .plan-flex-container div h1{
+    color: white;
+}
+#plans .plan-flex-container .plan{
+    display: flex;
+    padding: 30px;
+    height: 450px;
+    min-width: 400px;
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: var(--secondary);
+}
+#plans .plan-content{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+#plans .plan-content h1{
+    margin-bottom: 20px;
+}
+#plans .plan-content li{
+    padding: 5px;
+    color: white;
+}
+#plans .plan-content button{
+    margin-top: 20px;
+    padding: 10px;
+    min-width: 100px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+#plans .plan-content button:hover{
+    opacity: 0.75;
+}
+/*Smaller Desktop Res*/
+@media only screen and (max-width: 1800px){
+    #plans{
+        height: 2100px;
+    }
+    #plans li{
+        font-size: var(--mobile-text-font-size);
+    }
+    #plans .plan-flex-container{
+        flex-direction: column;
+    }
+    #plans .plan{
+        margin: 100px auto;
+    }
+}

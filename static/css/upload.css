@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+/*Upload Website*/
+#upload{
+    background-color: var(--primary);
+    min-width: 900px;
+    height: 900px;
+}
+.upload__container{
+    padding-top: 5%;
+    height: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+.upload__card h1{
+    text-align: center;
+    padding-top: 50px;
+}
+.upload__card{
+    border-radius: 25px;
+    box-shadow: 5px 5px 50px #888888;
+    background-color: rgba(253, 253, 253, 0.73);
+    max-width: 700px;
+    min-height: 600px;
+    margin: 0 auto;
+}
+.upload__card_form{
+    height: 50%;
+    width: 50%;
+    padding-top: 10%;
+    margin: 0 auto;
+}
+.upload__card_form input, label{
+    display: block;
+}
+.upload__card_form input[type=text]{
+    padding-left: 5px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 250px;
+    border: 1px gray solid;
+}
+.upload__card_form input[type=submit]{
+    font-size: 18px;
+    width: 250px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightblue;
+}
+.upload__card_form #upload-file{
+    display: none;
+}
+/*Selectors*/
+.upload__card_form input[type=text]:focus{
+    outline: none;
+}
+.upload__card_form input[type=submit]:hover{
+    opacity: 0.75;
+}
+
+/*Smaller Desktop Res*/
+@media only screen and (max-width: 1800px){
+    #upload{
+        height: 1700px;
+    }
+    .upload__container{
+        height: 1200px;
+        padding-top: 35%;
+    }
+    .upload__card_form label, input{
+        font-size: var(--mobile-text-font-size);
+    }
+}

@@ -4,6 +4,8 @@
     --secondary: #2c2c2c;
     --primary-text-color: white;
     --secondary-text-color: black;
+    --desktop-text-font-size: 18px;
+    --mobile-text-font-size: 22px;
 }
 *{
     padding: 0;
@@ -13,6 +15,8 @@
 }
 /*Nav*/
 #navbar{
+    width: 100%;
+    min-width: 900px;
     background-color: var(--secondary);
     color: var(--primary-text-color);
 }

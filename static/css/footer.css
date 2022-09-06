@@ -1,0 +1,29 @@
+/*Footer*/
+#footer{
+    color: var(--primary-text-color);
+    min-width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--secondary);
+}
+#footer .company-name{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#footer .footer-list, .social-media-list{
+    list-style-type: none;
+}
+#footer .footer-list li{
+    margin-top: 10px;
+}
+#footer .footer-list a{
+    text-decoration: none;
+    color: white;
+}
+#footer .social-media-list{
+    display: flex;
+    gap: 20px;
+}

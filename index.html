@@ -5,6 +5,8 @@
     <link rel="icon" href="static/images/web_icon.svg">
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <script src="static/js/ImageSwitch.js"></script>
     <title>NestedHosting</title>
 </head>
 <body>
@@ -16,17 +18,17 @@
           </div>
           <ul class="flex-list">
               <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
               <li><a href="">Plans</a></li>
-              <li><a href="">Sign In</a></li>
               <li><a href="">Start</a></li>
           </ul>
       </div>
   </nav>
   <header id="company-slogan">
       <div class="container">
-          <h1>Inspired by GitHub Pages</h1>
-          <p>For Web Developers, By Web Developers</p>
+          <div class="header">
+              <h1>Inspired by GitHub Pages</h1>
+              <p>For Web Developers, By Web Developers</p>
+          </div>
       </div>
   </header>
   <section id="nested-hosting">
@@ -35,29 +37,32 @@
             <div class="flex-text">
                 <div class="text">
                     <h1>Static Website Hosting</h1>
-                    <p>NestedHosting allows you to display your website to the world. Similar to GitHub Pages, our service creates a copy of your website onto our website which can be accessed from any point in the world.</p>
+                    <p>NestedHosting allows you to display your website to the world.
+                        Similar to GitHub Pages, our service creates a copy of your website onto our website which can be accessed from any point in the world.</p>
+                    <button>Read More</button>
                 </div>
 
                 <div class="text">
-                    <h1>How We Started</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores dolorem doloribus dolorum
-                        eligendi, enim est labore libero modi nam non, odit optio quae quidem reprehenderit repudiandae sequi
-                        sint ullam.</p>
+                    <h1>Free Plan</h1>
+                    <p>Our Company offers a free plan to whoever would like to host a static website. However, we have restrictions on how much storage the site will take to make sure there is room for others.</p>
+                    <button>Read More</button>
                 </div>
             </div>
-            <div class="flex-text-2">
+            <div class="flex-text">
                 <div class="text">
-                    <h1>Our Goal</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae distinctio ipsum minus quaerat qui!
-                        Amet delectus ex ipsum, minima modi, necessitatibus nemo nisi quas quia repudiandae ullam velit
-                        vero.</p>
+                    <h1>Best Prices</h1>
+                    <p>Unbeatable Prices and Affordability. Our mission is to help smaller developers demonstrate their design skills to the world.</p>
+                    <button>Read More</button>
                 </div>
             </div>
         </div>
         <div class="hosting-example">
-            <h1>What You Can Do</h1>
-            <p>Host Intricate Websites at the touch of a few buttons</p>
-            <img src="static/images/printham.github.io_AnimalDex_.png" style="max-height: 500px;">
+            <div class="example-text">
+                <h1>What You Can Do</h1>
+                <p>Host Intricate Websites with the touch of a few buttons</p>
+            </div>
+            <img id="image-example" src="static/images/website_example_1.png" style="max-height: 450px;" alt="Website Example">
+            <button onclick="NextImage();">Next Example</button>
         </div>
     </div>
   </section>
@@ -71,13 +76,7 @@
               <a href="">Home</a>
           </li>
           <li>
-              <a href="">About</a>
-          </li>
-          <li>
               <a href="">Plans</a>
-          </li>
-          <li>
-              <a href="">Sign In</a>
           </li>
           <li>
               <a href="">Start</a>
@@ -85,19 +84,19 @@
       </ul>
       <ul class="social-media-list">
           <li>
-              <a href=""><img src="static/images/icon-twitter.svg"></a>
+              <a href=""><img src="static/images/icon-twitter.svg" alt="twitter"></a>
           </li>
           <li>
-              <a href=""><img src="static/images/icon-facebook.svg"></a>
+              <a href=""><img src="static/images/icon-facebook.svg" alt="facebook"></a>
           </li>
           <li>
-              <a href=""><img src="static/images/icon-instagram.svg"></a>
+              <a href=""><img src="static/images/icon-instagram.svg" alt="instagram"></a>
           </li>
           <li>
-              <a href=""><img src="static/images/icon-pinterest.svg"></a>
+              <a href=""><img src="static/images/icon-pinterest.svg" alt="pinterest"></a>
           </li>
           <li>
-              <a href=""><img src="static/images/icon-youtube.svg"></a>
+              <a href=""><img src="static/images/icon-youtube.svg" alt="youtube"></a>
           </li>
       </ul>
   </footer>

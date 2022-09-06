@@ -4,7 +4,8 @@
 #company-slogan{
     background-color: var(--secondary);
     color: var(--primary-text-color);
-    min-height: 150px;
+    height: 200px;
+    min-width: 900px;
 }
 #company-slogan h1, #company-slogan p{
     text-align: center;
@@ -15,8 +16,19 @@
     animation-play-state: running;
     animation-iteration-count: infinite;
 }
+#company-slogan .container{
+    width: 800px;
+    height: 150px;
+    margin: 0 auto;
+}
+#company-slogan .header{
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+}
 /*Nested Hosting Introduction*/
 #nested-hosting{
+    min-width: 900px;
     background-color: var(--primary);
     color: var(--secondary-text-color);
     height: 1200px;
@@ -32,12 +44,20 @@
     max-width: 400px;
     margin-top: 20px;
     margin-bottom: 40px;
+    font-size: var(--desktop-text-font-size);
 }
 #nested-hosting .flex-text{
     display: flex;
 }
+#nested-hosting .flex-text button{
+    padding: 10px;
+    min-width: 100px;
+    border-radius: 10px;
+    background-color: lightblue;
+    color: black;
+}
 #nested-hosting .text{
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: var(--secondary);
     border-radius: 10px;
     padding: 20px;
 }
@@ -48,14 +68,18 @@
     color: white;
 }
 #nested-hosting .hosting-example{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 40px;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: var(--secondary);
 }
 #nested-hosting .hosting-example h1{
     color: lightblue;
 }
 #nested-hosting .hosting-example p{
+    font-size: var(--desktop-text-font-size);
     margin-top: 20px;
     margin-bottom: 40px;
     color: white;
@@ -63,33 +87,17 @@
 #nested-hosting .hosting-example img{
     border-radius: 25px;
 }
-/*Footer*/
-#footer{
-    color: var(--primary-text-color);
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--secondary);
-}
-#footer .company-name{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-#footer .footer-list, .social-media-list{
-    list-style-type: none;
-}
-#footer .footer-list li{
+#nested-hosting .hosting-example button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+    color: black;
     margin-top: 10px;
+    max-width: 150px;
 }
-#footer .footer-list a{
-    text-decoration: none;
-    color: white;
-}
-#footer .social-media-list{
-    display: flex;
-    gap: 20px;
+/*nested-hosting selectors*/
+#nested-hosting .flex-text button:hover, .hosting-example button:hover{
+    opacity: 0.75;
 }
 /*Animation*/
 @keyframes OpacityShift{
@@ -102,11 +110,20 @@
 }
 /*Smaller Desktop Res*/
 @media only screen and (max-width: 1800px){
+    #company-slogan p{
+        font-size: var(--mobile-text-font-size);
+    }
     #nested-hosting{
-        height: 1800px;
+        height: 2200px;
     }
     #nested-hosting .company-introduction{
         flex-direction: column;
         align-items: center;
+    }
+    #nested-hosting .company-introduction p{
+        font-size: var(--mobile-text-font-size);
+    }
+    #nested-hosting button{
+        font-size: 20px;
     }
 }
